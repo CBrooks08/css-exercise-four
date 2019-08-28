@@ -1,4 +1,121 @@
+/*general for the entire page*/
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
 body {
   background-color: #dadada;
   font-size: 10px;
+  margin:10px;
+}
+
+.container {
+  width: 100%;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+/*styling for the main header*/
+
+.main-title {
+  font-family: sans-serif;
+  letter-spacing: 1px;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 3%;
+}
+/*adding background images*/
+
+.baku {
+  background-image: url(/images/baku.jpg);
+  background-size: cover;
+  background-position: 0 20px;
+  background-repeat: no-repeat;
+}
+.london{
+  background-image: url(/images/london.png);
+  background-size: cover;
+  background-position: 0 20px;
+  background-repeat: no-repeat;
+}
+.madrid {
+  background-image: url(/images/madrid.jpg);
+  background-size: cover;
+  background-position: 0 20px;
+  background-repeat: no-repeat;
+}
+
+.rome {
+  background-image: url(/images/rome.jpg);
+  background-size: cover;
+  background-position: 0 20px;
+  background-repeat: no-repeat;
+}
+/*adjustments so the images will show*/
+.preview {
+  height: 350px;
+  padding: 10%;
+  width: 100%;
+}
+/*responsiveness for tablets*/
+@media screen and (min-width: 575px) {
+  .container {
+    padding-right: 10%;
+    padding-left: 10%;
+  }
+ .baku {
+    float: right;
+    width: 49%;
+  }
+  .london{
+    width: 49%;
+  }
+  .madrid {
+    float: right;
+    width: 49%;
+  }
+  .rome {
+    width: 49%;
+  }
+  .preview {
+    padding:7%;
+  }
+  .main-title {
+  padding-bottom: 1%;
+  }
+}
+/*responsiveness for laptops*/
+@media screen and (min-width: 991px) {
+  .baku {
+    background-position: 10px 10px;
+    float: left;
+     width: 24%;
+
+   }
+  .london{
+    background-position: 10px 10px;
+    float: left;
+    width: 24%;
+  }
+  .madrid {
+    background-position: 10px 10px;
+    float: left;
+    width: 24%;
+  }
+  .rome {
+    background-position: 10px 10px;
+    float: left;
+    width: 24%;
+  }
+   .preview {
+     padding:4%;
+     height: 200px;
+     display: inline;
+  }
+  .main-title {
+  padding-bottom: 2%;
+  }
 }
